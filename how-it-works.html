@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Gerrymandering Works | Understanding Gerrymandering</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+<div class="site-wrapper">
+  <header class="mobile-header">
+    <span class="mobile-header-title">Gerrymandering Edu</span>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+  </header>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-branding">
+      <div class="sidebar-title">Understanding Gerrymandering</div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-item">
+        <i class="ti ti-layout-grid nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-label">Overview</span></div>
+        <span class="nav-check" data-page="home">&#10003;</span>
+      </a>
+      <a href="what-is-gerrymandering.html" class="nav-item">
+        <i class="ti ti-info-circle nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 1</span><span class="nav-label">What is Gerrymandering?</span></div>
+        <span class="nav-check" data-page="what-is-gerrymandering">&#10003;</span>
+      </a>
+      <a href="history.html" class="nav-item">
+        <i class="ti ti-clock nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 2</span><span class="nav-label">History</span></div>
+        <span class="nav-check" data-page="history">&#10003;</span>
+      </a>
+      <a href="how-it-works.html" class="nav-item active">
+        <i class="ti ti-adjustments-horizontal nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 3</span><span class="nav-label">How It Works</span></div>
+        <span class="nav-check" data-page="how-it-works">&#10003;</span>
+      </a>
+      <a href="why-its-an-issue.html" class="nav-item">
+        <i class="ti ti-alert-triangle nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 4</span><span class="nav-label">Why It's An Issue</span></div>
+        <span class="nav-check" data-page="why-its-an-issue">&#10003;</span>
+      </a>
+      <a href="real-world-examples.html" class="nav-item">
+        <i class="ti ti-map-pin nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 5</span><span class="nav-label">Real-World Examples</span></div>
+        <span class="nav-check" data-page="real-world-examples">&#10003;</span>
+      </a>
+      <a href="in-court.html" class="nav-item">
+        <i class="ti ti-gavel nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 6</span><span class="nav-label">In Court</span></div>
+        <span class="nav-check" data-page="in-court">&#10003;</span>
+      </a>
+      <a href="solutions.html" class="nav-item">
+        <i class="ti ti-bulb nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 7</span><span class="nav-label">Solutions</span></div>
+        <span class="nav-check" data-page="solutions">&#10003;</span>
+      </a>
+      <a href="minigame.html" class="nav-item">
+        <i class="ti ti-device-gamepad-2 nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 8</span><span class="nav-label">Redistricting App</span></div>
+      </a>
+      <a href="why-does-this-matter.html" class="nav-item">
+        <i class="ti ti-speakerphone nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 9</span><span class="nav-label">Why Does This Matter?</span></div>
+        <span class="nav-check" data-page="why-does-this-matter">&#10003;</span>
+      </a>
+      <a href="bibliography.html" class="nav-item">
+        <i class="ti ti-books nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-label">Bibliography</span></div>
+      </a>
+    </nav>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <div class="page">
+
+      <div class="page-header">
+        <h1>How Gerrymandering Works</h1>
+      </div>
+
+      <div class="diagram-card">
+        <h3>The Basic Math of Gerrymandering</h3>
+        <p>Imagine a state with 50 voters: 30 belong to the Blue Party (60%) and 20 belong to the Red Party (40%). We need to draw 5 districts of 10 voters each. See how the outcome changes based on how the lines are drawn.</p>
+        <div class="diagram-grid">
+          <div class="diagram-col">
+            <h4>Proportional (Fair)</h4>
+            <p>Blue gets 3 seats, Red gets 2</p>
+            <div class="seat-row">
+              <div class="seat blue">B</div><div class="seat blue">B</div><div class="seat blue">B</div>
+              <div class="seat red">R</div><div class="seat red">R</div>
+            </div>
+          </div>
+          <div class="diagram-col blue-col">
+            <h4>Blue Gerrymander</h4>
+            <p>Blue gets 5 seats, Red gets 0</p>
+            <div class="seat-row">
+              <div class="seat blue">6</div><div class="seat blue">6</div><div class="seat blue">6</div><div class="seat blue">6</div><div class="seat blue">6</div>
+            </div>
+            <div class="diagram-note">Each district: 6 Blue, 4 Red</div>
+          </div>
+          <div class="diagram-col red-col">
+            <h4>Red Gerrymander</h4>
+            <p>Red gets 3 seats, Blue gets 2</p>
+            <div class="seat-row">
+              <div class="seat blue">10</div><div class="seat blue">10</div>
+              <div class="seat red">6</div><div class="seat red">7</div><div class="seat red">7</div>
+            </div>
+            <div class="diagram-note">Minority party rules!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item open">
+          <button class="accordion-header">Cracking<svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <p>Cracking is the practice of drawing electoral districts that divide the population of a community or constituency across several districts. This process basically reduces the influence of the community or constituency, preventing them from voting and having a majority in any given district. 
+</p>
+          </div></div>
+        </div>
+
+        <div class="accordion-item open">
+          <button class="accordion-header">Packing<svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <p>Packing refers to the practice of drawing electoral districts to consolidate the population of a community or constituency into a small number of districts. By packing a majority of the community or constituency into a small number of districts, the opposing party can win more seats than they otherwise would, while the community or constituency ends up with fewer seats.
+</p>
+            <div class="callout"><strong>Key Strategy:</strong> Effective gerrymanders usually combine packing and cracking. The mapmaker "packs" the opposition into a few districts they concede, and "cracks" the rest of the opposition's voters across many districts where they will safely lose.</div>
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Wasted Votes &amp; The Efficiency Gap<svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <p>A wasted vote is any vote cast that does not go to the election winner, and thus, the voter is not represented in the outcome. Additionally, it is any vote for the election winner that was not needed to win the election.</p>
+            <p>The efficiency gap is a standard for measuring partisan gerrymandering. It is a formula that calculates the difference between the two parties’ wasted votes, divided by the total number of votes. A higher efficiency gap indicates a partisan gerrymander.</p>
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">What makes an Equal Map<svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <p>Courts and reformers have identified several criteria that neutral, fair maps should follow:</p>
+            <ul>
+              <li><strong>Population Equality:</strong> There is population equality between a state’s congressional districts.</li>
+              <li><strong>Compactness and Contiguity:</strong> A compact district represents a geographically consolidated area, and contiguous means that one can travel anywhere in a district without crossing over into another district.</li>
+              <li><strong>Racial and Language Minority Protections:</strong> States can not draw district maps that have the effect of reducing or diluting minority voting strength.</li>
+              <li><strong>Preservation of Communities of Interest:</strong> Districts should keep together communities that share common political, social, or economic interests.</li>
+            </ul>
+            <div class="callout"><strong>Key Takeaway:</strong> Gerrymandering typically violates the spirit of compactness and community preservation, even when it technically satisfies contiguity and equal population requirements.</div>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="quiz-section">
+        <script type="application/json" class="quiz-data">
+        {
+          "quizId": "how-it-works",
+          "title": "",
+          "questions": [
+            {
+              "id": "q1",
+              "text": "What is packing?",
+              "options": [
+                {"id":"a","text":"Putting too many polling locations in one area"},
+                {"id":"b","text":"Concentrating an opposing party's voters into a few districts"},
+                {"id":"c","text":"Adding extra representatives to a single district"},
+                {"id":"d","text":"Filling a district with voters from outside the state"}
+              ],
+              "correctOptionId": "b",
+              "explanation": "Packing refers to the practice of drawing electoral districts to consolidate the population of a community or constituency into a small number of districts."
+            },
+            {
+              "id": "q2",
+              "text": "What is cracking?",
+              "options": [
+                {"id":"a","text":"Breaking up an opposing party's voters across many districts"},
+                {"id":"b","text":"Removing funding from specific voting districts"},
+                {"id":"c","text":"Invalidating election results due to fraud"},
+                {"id":"d","text":"Using computer software to alter voting machines"}
+              ],
+              "correctOptionId": "a",
+              "explanation": "Cracking is the practice of drawing electoral districts that divide the population of a community or constituency across several districts."
+            },
+            {
+              "id": "q3",
+              "text": "What is the efficiency gap?",
+              "options": [
+                {"id":"a","text":"The difference in time it takes to vote in rural vs urban areas"},
+                {"id":"b","text":"A measure of 'wasted votes' to determine if a map is gerrymandered"},
+                {"id":"c","text":"The cost of running an election campaign"},
+                {"id":"d","text":"The margin of error in voting machines"}
+              ],
+              "correctOptionId": "b",
+              "explanation": "The efficiency gap is a standard for measuring partisan gerrymandering."
+            },
+            {
+              "id": "q4",
+              "text": "Which of these is NOT what makes an equal map?",
+              "options": [
+                {"id":"a","text":"Contiguity"},
+                {"id":"b","text":"Compactness"},
+                {"id":"c","text":"Ensuring exact 50/50 splits everywhere"},
+                {"id":"d","text":"Preserving communities of interest"}
+              ],
+              "correctOptionId": "c",
+              "explanation": "Forcing 50/50 splits is not a method to create an equal map."
+            }
+          ]
+        }
+        </script>
+      </div>
+
+    </div>
+  </main>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

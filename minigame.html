@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redistricting App | Understanding Gerrymandering</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+<div class="site-wrapper">
+  <header class="mobile-header">
+    <span class="mobile-header-title">Gerrymandering Edu</span>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+  </header>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-branding">
+      <div class="sidebar-title">Understanding Gerrymandering</div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-item">
+        <i class="ti ti-layout-grid nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-label">Overview</span></div>
+        <span class="nav-check" data-page="home">&#10003;</span>
+      </a>
+      <a href="what-is-gerrymandering.html" class="nav-item">
+        <i class="ti ti-info-circle nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 1</span><span class="nav-label">What is Gerrymandering?</span></div>
+        <span class="nav-check" data-page="what-is-gerrymandering">&#10003;</span>
+      </a>
+      <a href="history.html" class="nav-item">
+        <i class="ti ti-clock nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 2</span><span class="nav-label">History</span></div>
+        <span class="nav-check" data-page="history">&#10003;</span>
+      </a>
+      <a href="how-it-works.html" class="nav-item">
+        <i class="ti ti-adjustments-horizontal nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 3</span><span class="nav-label">How It Works</span></div>
+        <span class="nav-check" data-page="how-it-works">&#10003;</span>
+      </a>
+      <a href="why-its-an-issue.html" class="nav-item">
+        <i class="ti ti-alert-triangle nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 4</span><span class="nav-label">Why It's An Issue</span></div>
+        <span class="nav-check" data-page="why-its-an-issue">&#10003;</span>
+      </a>
+      <a href="real-world-examples.html" class="nav-item">
+        <i class="ti ti-map-pin nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 5</span><span class="nav-label">Real-World Examples</span></div>
+        <span class="nav-check" data-page="real-world-examples">&#10003;</span>
+      </a>
+      <a href="in-court.html" class="nav-item">
+        <i class="ti ti-gavel nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 6</span><span class="nav-label">In Court</span></div>
+        <span class="nav-check" data-page="in-court">&#10003;</span>
+      </a>
+      <a href="solutions.html" class="nav-item">
+        <i class="ti ti-bulb nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 7</span><span class="nav-label">Solutions</span></div>
+        <span class="nav-check" data-page="solutions">&#10003;</span>
+      </a>
+      <a href="minigame.html" class="nav-item active">
+        <i class="ti ti-device-gamepad-2 nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 8</span><span class="nav-label">Redistricting App</span></div>
+      </a>
+      <a href="why-does-this-matter.html" class="nav-item">
+        <i class="ti ti-speakerphone nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-chapter">Chapter 9</span><span class="nav-label">Why Does This Matter?</span></div>
+        <span class="nav-check" data-page="why-does-this-matter">&#10003;</span>
+      </a>
+      <a href="bibliography.html" class="nav-item">
+        <i class="ti ti-books nav-icon" aria-hidden="true"></i>
+        <div class="nav-text"><span class="nav-label">Bibliography</span></div>
+      </a>
+    </nav>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <div class="page">
+
+      <div class="page-header">
+        <h1>Redistricting App</h1>
+        <p class="subtitle">Dave's Redistricting App.</p>
+      </div>
+
+      <div style="margin-bottom:1rem;background:hsl(220,20%,95%);border:1px solid var(--border);border-radius:var(--radius);padding:.65rem 1rem;font-size:.82rem;color:var(--muted-fg);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+        <span>Viewing: <strong style="color:var(--fg);">Virginia 2022 Enacted Congressional Map</strong> — Dave's Redistricting App</span>
+        <a href="https://davesredistricting.org/maps#viewmap::bc930c25-236f-46a7-bbe9-d8d77e21d011" target="_blank" rel="noreferrer" style="color:var(--primary);font-weight:600;white-space:nowrap;">Open in DRA &rarr;</a>
+      </div>
+
+      <div style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#fff;margin-bottom:2rem;">
+        <iframe
+          src="https://davesredistricting.org/maps#viewmap::bc930c25-236f-46a7-bbe9-d8d77e21d011"
+          width="100%"
+          height="680"
+          frameborder="0"
+          title="Virginia 2022 Enacted Congressional Map — Dave's Redistricting App"
+          allowfullscreen
+          style="display:block;"
+        ></iframe>
+      </div>
+
+      <div style="margin-top:2.5rem;">
+        <h2 style="font-size:1.5rem;margin-bottom:1rem;font-family:'Playfair Display',serif;">About This Map</h2>
+        <div class="accordion">
+          <div class="accordion-item open">
+            <button class="accordion-header">Virginia's 2022 Congressional Map<svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="accordion-body"><div class="accordion-body-inner">
+              <p>Virginia has 11 districts. The Virginia Redistricting Commission, a bipartisan committee made of 8 legislators and 8 citizens. The districting map was originally made by the commission, which deadlocked in agreement. Ultimately, the job was passed onto the Virginia Supreme Court, leading to a less gerrymandered version.</p>
+            </div></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">How to Read the Map<svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="accordion-body"><div class="accordion-body-inner">
+              <ul>
+                <li>Districts are divided by lines into 11 regions.</li>
+                <li>Color shading on the left side panel can be changed to view the districts in different categores like partisan lean or by varying color.</li>
+                <li>Hover over each district to see demographics for those specific districts. Click on <strong>Statistics</strong> and <strong>Analyze</strong> to see a breakdown and rating for the districting based on the demographics</li>
+              </ul>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-nav-footer">
+        <a href="why-does-this-matter.html">Continue to Chapter 9: Why Does This Matter? &rarr;</a>
+      </div>
+
+    </div>
+  </main>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
